@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript form validation - checking non-empty</title>
+    <link rel='stylesheet' href='form-style.css' type='text/css' />
+</head><br>
+
+<body onload='document.form1.text1.focus()'>
+    <form action="/submit_registration" method="post" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="userID">User ID:</label>
+        <input type="text" id="userID" name="userID" required><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select country</option>
+            <option value="mongolia">Mongolia</option>
+            <option value="russia">Russia</option>
+            <option value="china">China</option>
+            <option value="america">America</option>
+        </select><br><br>
+        <label for="zipCode">Zip Code:</label>
+        <input type="text" id="zipCode" name="zipCode" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="sex">Sex:</label>
+        <input type="radio" id="male" name="sex" value="male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="sex" value="female" required>
+        <label for="female">Female</label><br>
+
+        <label for="language">Language:</label>
+        <input type="checkbox" id="english" name="language" value="English">
+        <label for="english">English</label>
+
+        <input type="checkbox" id="spanish" name="language" value="Spanish">
+        <label for="spanish">Spanish</label><br>
+
+        <label for="about">About:</label>
+        <textarea id="about" name="about" rows="4"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="credit-card.js"></script>
+</body>
+
+</html>
